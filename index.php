@@ -1,5 +1,5 @@
 <?php
-  $homelessMoney="25 + 17 + 40 + 100 - 50 "
+  $homelessMoney="132 "
   $vodkaPrice="120"
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-     Cena vodky:<?=$vodkaPrice> ;
+     Cena vodky:<?=$vodkaPrice?> ;
      <br>Peníze bezdomovce před návštěvou večerky: <?=$homelessMoney?>
 </body>
 </html>
