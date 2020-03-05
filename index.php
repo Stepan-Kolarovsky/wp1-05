@@ -1,12 +1,12 @@
 <?php
-  $homelessMoney=132 ;
-  $vodkaPrice=119 ;
+  $homelessMoney = 132;
+  $vodkaPrice = 119;
   
-  if ($homelessMoney >= 119) {
-    $answer="Vodka Zakoupena!" ;
-    $rest = $homelessMoney - 119 ;
+  if ($homelessMoney >= $vodkaPrice) {
+    $answer = "Vodka Zakoupena!";
+    $rest = $homelessMoney - $vodkaPrice;
   } else {
-    $answer="Nedostatek peněz!";
+    $answer = "Nedostatek peněz!";
   }
   
 ?>
@@ -18,12 +18,12 @@
     <title>Document</title>
 </head>
 <body>
-     Cena vodky: <?=$vodkaPrice?>
-     <br>Peníze bezdomovce před návštěvou večerky:  <?=$homelessMoney?> </br>
+     Cena vodky: <?= $vodkaPrice ?>
+     <br>Peníze bezdomovce před návštěvou večerky:  <?= $homelessMoney ?> </br>
       <br>Bezdomovec přichází do večerky a slušně žádá o flašku vodky</br>
        <br>Prodavač podává flašku, a prosí o peníze</br>
         <br> Podává peníze</br>
-         <br><?=$answer?></br>
-      <br>Bezdomovci po návštěvě večerky zbývá: <?=$rest?></br>  
+         <br><?= $answer ?></br>
+      <br>Bezdomovci po návštěvě večerky zbývá: <?= $rest ?></br>  
 </body>
 </html>
